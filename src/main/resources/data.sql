@@ -1,0 +1,140 @@
+INSERT INTO LOCATION values (1001,'Palo Alto',44.9866,-93.2581,'California');
+insert into location values (1002,'Buffalo Grove',42.1663,87.9631,'Illinois');
+
+
+insert into weather (id, date,location_id) values (2005,sysdate(),1002);
+insert into weather (id, date,location_id) values (2002,sysdate(),1001);
+insert into weather (id, date,location_id) values (2001,sysdate()-1,1001);
+insert into weather (id, date,location_id) values (2004,sysdate()-2,1002);
+insert into weather (id, date,location_id) values (2003,sysdate(),1001);
+
+
+insert into temperature values (2005, 37.0);
+insert into temperature values (2005, 37.3);
+insert into temperature values (2005, 37.9);
+insert into temperature values (2005, 38.3);
+insert into temperature values (2005, 38.6);
+insert into temperature values (2005, 38.9);
+insert into temperature values (2005, 39.3);
+insert into temperature values (2005, 39.6);
+insert into temperature values (2005, 39.9);
+insert into temperature values (2005, 40.3);
+insert into temperature values (2005, 40.5);
+insert into temperature values (2005, 41.0);
+insert into temperature values (2005, 42.3);
+insert into temperature values (2005, 42.9);
+insert into temperature values (2005, 43.0);
+insert into temperature values (2005, 44.3);
+insert into temperature values (2005, 42.3);
+insert into temperature values (2005, 41.3);
+insert into temperature values (2005, 41.3);
+insert into temperature values (2005, 40.3);
+insert into temperature values (2005, 38.3);
+insert into temperature values (2005, 37.3);
+insert into temperature values (2005, 37.4);
+insert into temperature values (2005, 37.9);
+
+
+insert into temperature values (2002 , 37.0);
+insert into temperature values (2002 , 37.3);
+insert into temperature values (2002 , 37.9);
+insert into temperature values (2002 , 38.3);
+insert into temperature values (2002 , 38.6);
+insert into temperature values (2002 , 38.9);
+insert into temperature values (2002 , 39.3);
+insert into temperature values (2002 , 39.6);
+insert into temperature values (2002 , 39.9);
+insert into temperature values (2002 , 40.3);
+insert into temperature values (2002 , 40.5);
+insert into temperature values (2002 , 41.0);
+insert into temperature values (2002 , 42.3);
+insert into temperature values (2002 , 42.9);
+insert into temperature values (2002 , 43.0);
+insert into temperature values (2002 , 44.3);
+insert into temperature values (2002 , 42.3);
+insert into temperature values (2002 , 41.3);
+insert into temperature values (2002 , 41.3);
+insert into temperature values (2002 , 40.3);
+insert into temperature values (2002 , 38.3);
+insert into temperature values (2002 , 37.3);
+insert into temperature values (2002 , 37.4);
+insert into temperature values (2002 , 37.9);
+
+
+insert into temperature values (2001, 37.0);
+insert into temperature values (2001, 37.3);
+insert into temperature values (2001, 37.9);
+insert into temperature values (2001, 38.3);
+insert into temperature values (2001, 38.6);
+insert into temperature values (2001, 38.9);
+insert into temperature values (2001, 39.3);
+insert into temperature values (2001, 39.6);
+insert into temperature values (2001, 39.9);
+insert into temperature values (2001, 40.3);
+insert into temperature values (2001, 40.5);
+insert into temperature values (2001, 41.0);
+insert into temperature values (2001, 42.3);
+insert into temperature values (2001, 42.9);
+insert into temperature values (2001, 43.0);
+insert into temperature values (2001, 44.3);
+insert into temperature values (2001, 42.3);
+insert into temperature values (2001, 41.3);
+insert into temperature values (2001, 41.3);
+insert into temperature values (2001, 40.3);
+insert into temperature values (2001, 38.3);
+insert into temperature values (2001, 37.3);
+insert into temperature values (2001, 37.4);
+insert into temperature values (2001, 37.9);
+
+insert into temperature values (2004, 30.0);
+insert into temperature values (2004, 30.3);
+insert into temperature values (2004, 30.9);
+insert into temperature values (2004, 31.3);
+insert into temperature values (2004, 31.6);
+insert into temperature values (2004, 31.9);
+insert into temperature values (2004, 32.3);
+insert into temperature values (2004, 32.6);
+insert into temperature values (2004, 32.9);
+insert into temperature values (2004, 33.3);
+insert into temperature values (2004, 33.5);
+insert into temperature values (2004, 34.0);
+insert into temperature values (2004, 35.3);
+insert into temperature values (2004, 35.9);
+insert into temperature values (2004, 36.0);
+insert into temperature values (2004, 37.3);
+insert into temperature values (2004, 35.3);
+insert into temperature values (2004, 34.3);
+insert into temperature values (2004, 34.3);
+insert into temperature values (2004, 33.3);
+insert into temperature values (2004, 31.3);
+insert into temperature values (2004, 30.3);
+insert into temperature values (2004, 30.4);
+insert into temperature values (2004, 30.9);
+
+
+insert into temperature values (2003, 30.0);
+insert into temperature values (2003, 30.3);
+insert into temperature values (2003, 30.9);
+insert into temperature values (2003, 31.3);
+insert into temperature values (2003, 31.6);
+insert into temperature values (2003, 31.9);
+insert into temperature values (2003, 32.3);
+insert into temperature values (2003, 32.6);
+insert into temperature values (2003, 32.9);
+insert into temperature values (2003, 33.3);
+insert into temperature values (2003, 33.5);
+insert into temperature values (2003, 34.0);
+insert into temperature values (2003, 35.3);
+insert into temperature values (2003, 35.9);
+insert into temperature values (2003, 36.0);
+insert into temperature values (2003, 37.3);
+insert into temperature values (2003, 35.3);
+insert into temperature values (2003, 34.3);
+insert into temperature values (2003, 34.3);
+insert into temperature values (2003, 33.3);
+insert into temperature values (2003, 31.3);
+insert into temperature values (2003, 30.3);
+insert into temperature values (2003, 30.4);
+insert into temperature values (2003, 30.9);
+
+
