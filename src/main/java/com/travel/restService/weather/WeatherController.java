@@ -40,7 +40,7 @@ public class WeatherController {
 			@PathVariable("date") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate date) throws ParseException {
 		return service.findWeatherByDate(date);
 	}
-	
+
 	// Get all Weather information in ascending order of weather id.
 	@GetMapping(path = "/weather")
 	public List<Weather> getAllWeather() {
@@ -50,11 +50,12 @@ public class WeatherController {
 	// Save new weather information.
 	@PostMapping(path = "/weather")
 	public ResponseEntity<Object> saveWeather(@Valid @RequestBody Weather wb) {
-		service.saveWeatherData(wb);
+		boolean created = service.saveWeatherData(wb);
+		if (!created) {
+			throw new UserExistsException("id =" + wb.getId() + " already exists.");
+		}
 		URI loc = ServletUriComponentsBuilder.fromCurrentRequest().path("/{date}").buildAndExpand(wb.getDate()).toUri();
-		System.out.println(" loc = " + loc);
 		return ResponseEntity.created(loc).build();
-
 	}
 
 	// Delete all weather information.

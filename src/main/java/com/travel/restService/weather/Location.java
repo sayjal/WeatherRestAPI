@@ -22,10 +22,10 @@ public class Location {
 	@OneToMany(cascade = CascadeType.PERSIST)
 	private List<Weather> weather;
 	
-	@Digits(integer=3,fraction=4,message="Lattiude must have 4 decimal points") 
+	@Digits(integer=3,fraction=4,message="Lattiude format ###.####") 
 	private float lat;
 	
-	@Digits(integer=3,fraction=4,message="Longitude must have 4 decimal points") 
+	@Digits(integer=3,fraction=4,message="Longitude format ###.####") 
 	private float lon;
 	
 	private String city;
@@ -44,10 +44,6 @@ public class Location {
 		this.state = state;
 	}
 	
-//	public int getId() {
-//		return id;
-//	}
-
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -83,10 +79,6 @@ public class Location {
 	public void setState(String state) {
 		this.state = state;
 	}
-
-//	public List<Weather> getWeather() {
-//		return weather;
-//	}
 
 	public void setWeather(List<Weather> weather) {
 		this.weather = weather;

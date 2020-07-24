@@ -1,4 +1,4 @@
-package com.travel.weather;
+package com.travel.restService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

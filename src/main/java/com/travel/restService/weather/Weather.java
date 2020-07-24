@@ -38,8 +38,8 @@ public class Weather {
 	
 	@ElementCollection
 	@CollectionTable(name ="temperature")
-	@Size(min=24,max=24,message="Must input temperatures for 24 hours")
-	private List<@Digits(integer=3,fraction=1,message="All Temperatures must have 1 decimal points") Float> temperature; 
+	@Size(min=24,max=24,message="Temperature must be an array of 24 values")
+	private List<@Digits(integer=3,fraction=1,message="Temperature format ###.#") Float> temperature; 
 	
 	public Weather() {
 		

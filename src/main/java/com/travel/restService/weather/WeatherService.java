@@ -29,14 +29,14 @@ public class WeatherService {
 	// Add New Weather
 	public boolean saveWeatherData(Weather wb) {
 		// If Weather Id already exists. Do not add data.
-		if (weatherRepository.existsById(wb.getId()))
-			throw new UserExistsException("id =" + wb.getId() + " already exists.");
+		if (weatherRepository.existsById(wb.getId())) {
+			return false;
+		}
 		// Get Location details.
 		Location locOptional = locationRepository.existsByCordinates(wb.getLocation().getCity(),
 				wb.getLocation().getState());
 		// If location information does not exists, add data for Location and Weather.
 		if (null == locOptional) {
-			System.out.println(" ADD both data");
 			locationRepository.save(wb.getLocation());
 			weatherRepository.save(wb);
 		} else {
@@ -50,5 +50,6 @@ public class WeatherService {
 	// Delete all weather data
 	public void deleteAllWeatherData() {
 		weatherRepository.deleteAll();
+		locationRepository.deleteAll();
 	}
 }
