@@ -1,16 +1,34 @@
 # WeatherRestAPI
-A set of REST API to provide weather information. Technology stack: Spring Boot, JPA, H2
+
+It is a coding exercise project to build set of REST services. 
+Technology stack: Spring Boot, JPA, H2, JUnit. 
+
+Exposed services are:
+
+1.	Get : /weather
+Info: Get All weather data, sorted ascending by id
+Output: All weather data sorted in ascending order of Weather Id. HTTP Response 200.
+
+2.	Get : /weather?date={date}  or /weather/{date}
+Info: Get weather data recorded on input date. 
+Output: Weather data of given date. 
+
+3.	Post: /weather
+Info: Save weather information. 
+Input: JSON as below. 
+Output: If weather Id already exists, HTTP Response code should be 400. 
+	Else weather data should be added and HTTP Response code should be 201. 
+
+4.	Delete: /erase 
+Info: Delete all weather Info. 
+Output: HTTP Response code 200. 
 
 
 Requirements for this project is as below: 
 
-In this challenge, you are part of a team building a travel company platform. One requirement is for a REST API service to provide weather information using some framework. You will need to add functionality to add and delete information as well as to perform some queries. You'll be dealing with typical information for weather data like latitude, longitude, temperature, etc. The team has come up with a set of requirements, response codes and error messages for the queries you must implement.
-
- 
+you are part of a team building a travel company platform. One requirement is for a REST API service to provide weather information using some framework.  
 
 The definitions and a detailed requirements list follow.
-
- 
 
 Each weather data is a JSON entry with the following keys:
 
